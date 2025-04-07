@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+      
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #050505;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+     
+        header {
+            background-color: #019a9a;
+            color: rgb(39, 172, 172);
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+       
+        .section {
+            padding: 40px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .home-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .home-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .home-image {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .home-image img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }   
+     
+        #about {
+            background-color: #fff;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        
+        #skills {
+            background-color: #f9f9f9;
+        }
+
+        .skills-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #049ba9;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            font-size: 1em;
+        }
+
+       
+        #contact {
+            background-color: #fff;
+        }
+        img{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div class="container">
+            <h1 style="color:white;">My Portfolio</h1><hr>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="section">
+        <div class="container home-flex">
+            
+            
+            <div class="home-text">
+                <h2>Hi, I'm Rachit. A Student of NIST Kathmandu, Nepal.</h2>
+            </div>
+    
+            
+            <div class="home-image">
+                <img src="123.jpg" alt="Rachit Dangol" width="100px" height="100px">
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Rachit Dangol, a passionate web developer with a love for creating clean, efficient, and user-friendly websites. I specialize in front-end development, working primarily with HTML, CSS, and C LANGUAGE. I believe that great web design is not just about making things look good, but also about creating seamless and intuitive user experiences.
+
+                I started my journey into web development because I enjoy solving problems and bringing ideas to life through code. I am always eager to learn new technologies and improve my skills to stay up-to-date with the latest trends in the industry.
+                
+                When I’m not coding, you can find me exploring new places, reading tech blogs, playing video games, etc. I’m excited about the opportunity to work on meaningful projects and collaborate with others to create impactful solutions.
+                
+                Feel free to explore my portfolio, and if you’re interested in working together, don’t hesitate to reach out!</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-cards">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Writing clean, accessible code using proper HTML tags to improve readability and SEO.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Proficient in using the latest version of CSS to style websites and enhance their appearance.</p>
+                </div>
+                <div class="card">
+                    <h3>C LANGUAGE</h3>
+                    <p> Proficient in writing functions to modularize code, pass parameters, and return values.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: rachitdangol8@gmail.com</p>
+            <p>Contact No: 9814021539</p>
+            <p>
+                <a href="https://github.com/RCT08" target="_blank">GitHub</a> |
+                <a href="https://instagram.com/hakun_08" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </section>
+    
+    <footer style="color: black; text-align: center;">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 RACHIT DANGOL. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
